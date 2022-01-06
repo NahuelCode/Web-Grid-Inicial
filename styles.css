@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  height: 100%;
+}
+
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.2rem;
+  min-height: 100%;
+}
+
+.header {
+  grid-area: header;
+  background-color: #e8795d;
+
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: #778a55;
+  
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #778a55;
+}
+
+.main {
+  grid-area: main;
+  background-color: #c58561;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #de7e60;
+}
+
+.grid-container {
+  display: grid;
+  gap: 5px;
+  grid-template: 
+  "header header"   100px
+  "navbar navbar"   50px
+  "main sidebar"    auto 
+  "footer footer"   100px /
+  auto 250px
+
+}
+
+
+
+
+
+
